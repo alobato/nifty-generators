@@ -3,7 +3,7 @@ require 'generators/nifty'
 module Nifty
   module Generators
     class DeployGenerator < Base
-      argument :app_name, :type => :string, :default => 'app', :banner => 'app_name'
+      argument :app_name, :type => :string, :default => '', :banner => 'app_name'
       argument :server_ip, :type => :string, :default => '', :banner => 'server_ip'
       argument :domain, :type => :string, :default => '', :banner => 'domain'
 
@@ -23,18 +23,6 @@ module Nifty
       end
 
       private
-
-      # def app_name
-      #   app_name.underscore
-      # end
-      # 
-      # def server_ip
-      #   server_ip
-      # end
-      # 
-      # def domain
-      #   domain
-      # end
 
       def destination_path(path)
         File.join(destination_root, path)

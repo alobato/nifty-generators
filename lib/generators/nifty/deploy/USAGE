@@ -2,12 +2,4 @@ Description:
     The nifty_config generator creates deploy files
 
 Examples:
-    rails generate nifty:deploy
-
-        Config:      config/app_config.yml
-        Initializer: config/initializers/load_app_config.rb
-
-    rails generate nifty:deploy appname
-
-        Config:      config/passwords_config.yml
-        Initializer: config/initializers/load_passwords_config.rb
+    rails g nifty:deploy blank 10.10.1.1 domain.com
