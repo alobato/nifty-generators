@@ -24,17 +24,17 @@ module Nifty
 
       private
 
-      def app_name
-        app_name.underscore
-      end
-
-      def server_ip
-        server_ip
-      end
-
-      def domain
-        domain
-      end
+      # def app_name
+      #   app_name.underscore
+      # end
+      # 
+      # def server_ip
+      #   server_ip
+      # end
+      # 
+      # def domain
+      #   domain
+      # end
 
       def destination_path(path)
         File.join(destination_root, path)
