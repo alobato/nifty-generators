@@ -36,6 +36,10 @@ module Nifty
         domain
       end
 
+      def destination_path(path)
+        File.join(destination_root, path)
+      end
+
     end
   end
 end
